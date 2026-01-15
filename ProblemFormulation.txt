@@ -1,0 +1,19 @@
+1. What is the central question?
+Why I’m doing this project. How is it going to make any change for the field that is using it?
+How can predicting a certain disease in a patient years before help change their life? 
+
+2. Why is it important in context?
+Can increase their life expectancy and help lead a healthy life
+
+3. What would “success” look like?
+Detecting early signs of possible symptoms.
+
+4. What variables are essential, and Why?
+Patient health data, including its oxygen level, its body temperature, and blood report results. Important to know the real-time condition of the patient
+
+5. Who will use the results?
+HCP Professional and medical researchers
+
+6. Is this realistic given constraints?
+Yes
+
