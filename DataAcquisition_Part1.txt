@@ -1,0 +1,10 @@
+1. Where the data would come from?
+Patient data from MIMIC.
+
+2. How it would be collected?
+To get MIMIC dataset there are some approval and guidelines how it should be used.
+I'm working on getting my approval.
+
+3.Known or expected limitations
+This dataset is subject to completion of specific video which abide by its regulation and compliance. 
+Since these are the real patient data it has to be monitored how and in what way I'm using it for my project.
