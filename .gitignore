@@ -1,2 +1,5 @@
 .env
 *.pdf
+/.ipynb_checkpoints
+/mimic dataset
+
