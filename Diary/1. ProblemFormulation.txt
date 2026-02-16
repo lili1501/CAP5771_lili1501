@@ -1,89 +1,90 @@
-The objective of this project is to explore early clinical deterioration in ICU patients 
-using structured physiologic and laboratory data from the MIMIC-IV database. 
-Specifically, we focus on extracting and analyzing the first 72 hours of ICU data to 
-understand patterns that may signal worsening organ function.
-The problem is measurable because ICU deterioration can be quantified through changes in 
-vital signs (heart rate, mean arterial pressure, respiratory rate, oxygenation), laboratory
-abnormalities (lactate, creatinine, bilirubin, white blood cell count, platelet count), and 
-length of stay characteristics. These variables are consistently recorded in ICU 
-environments and are suitable for structured analysis.
-
-A 72-hour window was selected to capture early physiologic instability while minimizing 
-data leakage from later outcomes. This time-based restriction ensures that features are 
-temporally aligned and reflect early ICU physiology rather than downstream consequences.
-
-The problem is clinically meaningful because early detection of instability may guide
-interventions, resource allocation, and severity assessment in critical care settings.
-
-
 1. What is the central question?
-The central question of this project is:
-Can early physiologic and laboratory data from the first 72 hours of 
-ICU admission be used to characterize and identify patterns of clinical deterioration?
 
-Specifically, the project seeks to determine whether structured ICU measurements 
-(vital signs and laboratory values) contain early signals of instability that may 
-indicate worsening organ function or severity of illness.
+The central question of this project is:
+
+Can ICU mortality be predicted using clinical data collected within 
+the first 72 hours of ICU admission?
+
+This is formulated as a supervised binary classification problem, where the goal is to 
+estimate the probability of in-hospital mortality using early physiological and 
+laboratory indicators.
+
 
 2. Why is it important in context?
-Early detection of clinical deterioration in ICU settings is critically 
-important because:
+Early identification of high-risk ICU patients is critical for timely intervention, 
+resource allocation, and clinical decision-making. Mortality prediction models can 
+support clinicians in:
 
-ICU patients are physiologically unstable.
-Small changes in vital signs or laboratory values may precede major complications.
-Early identification allows timely intervention, potentially improving outcomes.
-ICU resources are limited and high-cost.
+- Recognizing early clinical deterioration
+- Prioritizing high-risk patients
+- Allocating intensive monitoring and interventions
+- Improving overall ICU management strategies
 
-In the broader healthcare context, understanding early deterioration patterns 
-supports better triage, monitoring prioritization, and resource allocation in 
-critical care environments.
-
-From a data perspective, ICU monitoring systems continuously generate structured 
-physiologic data, making this problem well-suited for database-driven analysis.
+Using only the first 72 hours ensures the model reflects early warning signals 
+rather than outcomes influenced by prolonged hospitalization.
 
 3. What would “success” look like?
-Detecting early signs of possible symptoms.
 
-4. What variables are essential, and Why?
-Vital Signs
-Heart Rate (HR) – indicator of cardiovascular stress.
-Mean Arterial Pressure (MAP) – indicator of perfusion and shock.
-Respiratory Rate (RR) – marker of respiratory distress.
-Oxygen Saturation (SpO₂) – reflects oxygenation status.
-Temperature – marker of infection or systemic inflammation.
-FiO₂ and PaO₂ – indicators of respiratory failure severity.
+Success would be:
 
-Laboratory Values
-Lactate – marker of tissue hypoperfusion and shock.
-Creatinine – indicator of renal function.
-Bilirubin – marker of hepatic dysfunction.
-WBC count – marker of infection or inflammation.
-Platelet count – indicator of coagulation dysfunction.
+Developing a model that can reliably distinguish between survivors 
+and non-survivors.
 
-Length of Stay (LOS)
-Provides contextual severity and helps interpret early physiologic instability.
-These variables were selected because they represent core physiologic systems 
-(cardiovascular, respiratory, renal, hepatic, hematologic) and are routinely 
-measured in ICU care.
+Achieving strong discrimination performance (e.g., high AUROC).
+Producing clinically interpretable insights into key mortality drivers.
+Ensuring no data leakage beyond the 72-hour time window.
+
+A successful model should generalize well and identify physiologically meaningful 
+predictors of mortality.
+
+4. What variables are essential, and why?
+The essential variables include:
+
+Demographics:
+
+Age, gender, race, ICU type
+These provide baseline patient risk context.
+
+Vital Signs (first 72 hours):
+
+Heart rate, MAP, respiratory rate, SpO2, blood pressure
+These reflect hemodynamic and respiratory stability.
+
+Laboratory Markers:
+
+Lactate, creatinine, bilirubin, BUN, WBC, platelets, sodium, potassium
+These indicate organ dysfunction and systemic stress.
+
+Urine Output:
+
+Total urine output in 72 hours
+This reflects renal function and critical illness severity.
+
+These variables are essential because they capture early multi-organ 
+physiological status.
 
 5. Who will use the results?
-The results may be useful for:
-Critical care clinicians interested in early physiologic trends.
-Hospital administrators evaluating ICU severity patterns.
-Data scientists developing early warning systems.
-Healthcare researchers studying organ dysfunction progression.
-In this project context, the results primarily support exploratory modeling and 
-database-driven ICU research.
 
-6. Is this realistic given constraints?
-Yes, this project is realistic given the constraints of:
-Using structured MIMIC-IV data.
-Restricting analysis to the first 72 hours to prevent temporal leakage.
-Working within computational limits by analyzing a subset of ICU stays.
-Using SQLite for efficient relational integration.
-The problem is measurable using available variables, and the scope is appropriately 
-constrained for a milestone phase focused on database design and exploratory analysis.
+Potential users include:
 
+- ICU clinicians and hospital staff
+- Clinical data scientists
+- Hospital administrators
+- Researchers studying critical care outcomes
 
+The results may inform risk stratification strategies and support 
+evidence-based ICU management.
 
+Is this realistic given constraints?
+
+Yes, this project is realistic within the defined constraints:
+
+The dataset (MIMIC-IV) is structured and accessible.
+All features are restricted to the first 72 hours, preventing leakage.
+Aggregated summaries reduce computational complexity.
+The modeling task is clearly defined and measurable.
+However, constraints include class imbalance, missing laboratory data, 
+and single-center data limitations.
+
+Overall, the project is feasible and appropriate given available resources and scope.
 
