@@ -167,10 +167,7 @@ Key findings:
 
 The database schema diagram is included as:
 
-
-
 ![db schema Describe](database_schema.png)
-
 
 It illustrates:
 
