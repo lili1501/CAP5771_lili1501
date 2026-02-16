@@ -1,0 +1,50 @@
+1. Where the data would come from?
+The data for this project comes from the MIMIC-IV (Medical Information Mart 
+for Intensive Care) clinical database, hosted on PhysioNet.
+
+MIMIC-IV is a credentialed dataset containing de-identified ICU patient records. 
+Access requires:
+
+Completion of human-subjects research training
+Approval through PhysioNet
+Agreement to data use policies
+
+The dataset is provided as downloadable CSV files, which serve as the raw source of 
+clinical data for this project.
+
+2. How it would be collected?
+The data acquisition process for this project consists of the following steps:
+
+Obtain credentialed access to MIMIC-IV through PhysioNet.
+Download the required CSV files via secure internet access.
+Store the files locally within the project directory.
+Create a local SQLite database (mimic_iv.db).
+Load the CSV files into structured database tables.
+Create SQL views to filter time-series data to the first 72 hours of ICU admission.
+Generate aggregated feature tables using SQL GROUP BY operations.
+Merge feature tables into a final ICU-level dataset (icu_features) 
+containing one row per ICU stay.
+All processing is performed locally using SQLite and Python to ensure reproducibility 
+and controlled data handling.
+
+3.Known or expected limitations
+The following limitations are specific to the data access and acquisition process:
+
+a. Large File Sizes
+Some tables (e.g., chartevents, labevents) are very large, which may lead to:
+Long download times
+High storage requirements
+Extended import times into SQLite
+
+b. Local System Constraints
+Database creation and querying depend on the local machine’s:
+Available memory (RAM)
+CPU performance
+Disk space
+
+This may affect performance during aggregation and joins.
+
+c.SQLite Performance Limitations
+
+SQLite is suitable for local analytical work but may be slower for 
+large-scale time-series operations compared to enterprise databases such as PostgreSQL.

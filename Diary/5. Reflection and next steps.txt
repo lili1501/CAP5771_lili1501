@@ -1,0 +1,21 @@
+Reflection:
+
+1. Early 72-hour data captures meaningful signals of ICU mortality.
+2. Non-survivors show higher organ dysfunction markers (lactate, creatinine, bilirubin, BUN).
+3. Hemodynamic instability (higher HR/RR, lower BP) aligns with mortality patterns.
+4. Significant missingness in selected lab variables.
+5. Strong multicollinearity among mean/min/max feature variants.
+6. Class imbalance present (~12–15% mortality).
+7. LOS and some lab values are highly skewed with extreme outliers.
+
+Next Steps:
+
+1. Remove redundant highly correlated features.
+2. Handle missing values using appropriate imputation strategies.
+3. Apply log transformation to skewed laboratory variables.
+4. Address class imbalance using class weights or resampling.
+5. Build baseline model (logistic regression) for interpretability.
+6. Compare with tree-based models (Random Forest / XGBoost).
+7. Evaluate using AUROC, precision-recall, and calibration.
+8. Analyze feature importance for clinical interpretability.
+9. Consider incorporating temporal trends instead of aggregated summaries in future work.
