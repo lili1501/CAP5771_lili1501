@@ -2,4 +2,7 @@
 *.pdf
 /.ipynb_checkpoints
 /mimic dataset
+/archive
+/mimic.db
+*.csv
 
