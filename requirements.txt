@@ -1,0 +1,16 @@
+# Core data handling
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+
+# Progress bar
+tqdm
+
+# Notebook environment
+jupyter
+
+# Database
+# SQLite is used (sqlite3 is included in Python standard library)
