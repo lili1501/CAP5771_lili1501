@@ -182,9 +182,7 @@ It illustrates:
 
 The complete data dictionary is provided as:
 
-```
-data_dictionary.pdf
-```
+![data dict](data_dictionary.pdf)
 
 It describes:
 
@@ -221,8 +219,8 @@ All processing is reproducible and programmatically executed.
 ## Step 1 – Clone Repository
 
 ```bash
-git clone < https://github.com/lili1501/CAP5771_lili1501.git >
-cd project
+git clone <https://github.com/lili1501/CAP5771_lili1501.git>
+cd CAP5771_LILI1501
 ```
 
 ## Step 2 – Create Environment
@@ -254,10 +252,9 @@ pip install -r requirements.txt
    - Generate aggregated feature tables
 4. The database will be created locally as (see intruction in db_instruction):
 
-```
+
 mimic_iv.db
 [db_instruction.md](db_instruction.md)
-```
 
 
 ---
