@@ -20,23 +20,27 @@ After approval, download the MIMIC-IV dataset.
 Note: Not all the datasets needs to be downloaded for this project.
 Required: 
 - hosp
-  - 1. patients
-  - 2. admissions
-  - 3. diagnoses_icd
-  - 4. labevents
-  - 5. d.labitems (mapping)
+  - patients
+  - admissions
+  - diagnoses_icd
+  - labevents
+  - d.labitems (mapping)
 
 - icu
-  - 1. icustays
-  - 2. inputevents
-  - 3. outputevents
-  - 4. chartevents
-  - 5. d_items (mapping)
+  - icustays
+  - inputevents
+  - outputevents
+  - chartevents
+  - d_items (mapping)
 
 Optional
 - hosp
-  - 1. d_icd_diagnoses
-  - 2. d_icd_procedures
+  - diagnoses_icd
+  - d_icd_diagnoses
+  - d_icd_procedures
+- icu
+  - inputevents
+  - procedurevents
 
 ---
 
@@ -49,4 +53,7 @@ After downloading and extracting the dataset, place the required CSV files in:
 
 ## Step 2: Create tables
 
-Import required libraries and use the code under DATA ACQUISITION (DATABASE MANAGEMENT) in Milestone1.ipynb for schema and rest of the procedures.
+Import required libraries (sqlite3) and use the code under DATA ACQUISITION (DATABASE MANAGEMENT) in Milestone1.ipynb for schema and rest of the procedures.
+
+![Milesrtone1](Milestone1.ipynb)
+
