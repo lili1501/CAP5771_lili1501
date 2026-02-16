@@ -182,7 +182,7 @@ It illustrates:
 
 The complete data dictionary is provided as:
 
-![data dict](data_dictionary.pdf)
+![data dictionary](data_dictionary.pdf)
 
 It describes:
 
@@ -201,6 +201,7 @@ The main implementation file:
 ```
 Milestone1.ipynb
 ```
+![Milestione1](Milestone1.ipynb)
 
 Includes:
 
