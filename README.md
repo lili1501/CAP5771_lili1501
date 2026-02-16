@@ -165,7 +165,7 @@ Key findings:
 
 # 6. Database Schema
 
-The database schema diagram is included as:
+The database schema ER diagram as follows :
 
 ![db schema Describe](database_schema.png)
 
