@@ -117,6 +117,7 @@ Database schema visualization is included in:
 database_schema.png
 ```
 
+
 ---
 
 # 4. Data Exploration
@@ -166,9 +167,10 @@ Key findings:
 
 The database schema diagram is included as:
 
-```
-database_schema.png
-```
+
+
+![db schema Describe](database_schema.png)
+
 
 It illustrates:
 
