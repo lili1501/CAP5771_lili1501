@@ -1,0 +1,195 @@
+{
+  "n_total": 47291,
+  "n_died": 5727,
+  "n_survived": 41564,
+  "mort_rate": 0.12110126662578503,
+  "median_age": 65.0,
+  "median_los": 1.963645833333333,
+  "age_bins": [
+    18,
+    23,
+    28,
+    33,
+    38,
+    43,
+    48,
+    53,
+    58,
+    63,
+    68,
+    73,
+    78,
+    83,
+    88,
+    93,
+    98,
+    103,
+    108
+  ],
+  "age_hist_survived": [
+    717,
+    1021,
+    1087,
+    1237,
+    1471,
+    1980,
+    2968,
+    4060,
+    4861,
+    5023,
+    4687,
+    4228,
+    3568,
+    2667,
+    1989,
+    0,
+    0,
+    0,
+    0
+  ],
+  "age_hist_died": [
+    23,
+    39,
+    80,
+    94,
+    113,
+    161,
+    306,
+    458,
+    548,
+    676,
+    689,
+    725,
+    675,
+    595,
+    545,
+    0,
+    0,
+    0,
+    0
+  ],
+  "unit_mort": {
+    "Cardiac ICU": 0.0834,
+    "General ICU": 0.5333,
+    "MICU": 0.1673,
+    "Mixed ICU": 0.1589,
+    "Other": 0.0261,
+    "PACU": 0.1607,
+    "SICU": 0.1361,
+    "Trauma ICU": 0.1083,
+    "Ward": 0.5
+  },
+  "unit_counts": {
+    "Cardiac ICU": 12723,
+    "MICU": 10418,
+    "Mixed ICU": 7690,
+    "SICU": 7436,
+    "Trauma ICU": 5302,
+    "Other": 3645,
+    "PACU": 56,
+    "General ICU": 15,
+    "Ward": 6
+  },
+  "los_survived": {
+    "q25": 1.0899247685185185,
+    "median": 1.908715277777778,
+    "q75": 3.600541087962963,
+    "mean": 3.4078557827482805
+  },
+  "los_died": {
+    "q25": 1.168113425925926,
+    "median": 2.776076388888889,
+    "q75": 6.6800752314814815,
+    "mean": 5.342888134946059
+  },
+  "lab_medians": {
+    "mean_lactate": {
+      "survived": 1.6651515151515153,
+      "died": 2.34
+    },
+    "mean_creatinine": {
+      "survived": 0.9,
+      "died": 1.5
+    },
+    "mean_bun": {
+      "survived": 17.75,
+      "died": 32.44444444444444
+    },
+    "mean_bilirubin": {
+      "survived": 0.6,
+      "died": 0.9
+    },
+    "mean_wbc": {
+      "survived": 9.875,
+      "died": 12.8
+    },
+    "mean_hemog": {
+      "survived": 10.242857142857144,
+      "died": 9.44
+    },
+    "mean_sodium": {
+      "survived": 138.33333333333334,
+      "died": 138.6
+    },
+    "mean_potassium": {
+      "survived": 4.0600000000000005,
+      "died": 4.16
+    },
+    "mean_platelets": {
+      "survived": 189.4,
+      "died": 166.0
+    }
+  },
+  "missing_pct": {
+    "los": 0.02,
+    "max_hr": 0.08,
+    "min_hr": 0.08,
+    "mean_hr": 0.08,
+    "max_sbp": 0.37,
+    "min_sbp": 0.37,
+    "mean_sbp": 0.37,
+    "max_dbp": 0.38,
+    "min_dbp": 0.38,
+    "mean_dbp": 0.38,
+    "min_map": 0.36,
+    "max_map": 0.36,
+    "mean_map": 0.36,
+    "max_rr": 0.18,
+    "min_rr": 0.18,
+    "mean_rr": 0.18,
+    "min_spo2": 0.22,
+    "max_spo2": 0.22,
+    "mean_spo2": 0.22,
+    "max_fio2": 50.97,
+    "max_pao2": 57.27,
+    "mean_temp_c": 1.44,
+    "max_creatinine": 1.78,
+    "min_creatinine": 1.78,
+    "mean_creatinine": 1.78,
+    "max_lactate": 42.0,
+    "min_lactate": 42.0,
+    "mean_lactate": 42.0,
+    "max_bilirubin": 47.57,
+    "min_bilirubin": 47.57,
+    "mean_bilirubin": 47.57,
+    "max_wbc": 1.84,
+    "min_wbc": 1.84,
+    "mean_wbc": 1.84,
+    "max_hemog": 1.84,
+    "min_hemog": 1.84,
+    "mean_hemog": 1.84,
+    "max_sodium": 1.7,
+    "min_sodium": 1.7,
+    "mean_sodium": 1.7,
+    "max_potassium": 1.67,
+    "min_potassium": 1.67,
+    "mean_potassium": 1.67,
+    "max_bun": 1.8,
+    "min_bun": 1.8,
+    "mean_bun": 1.8,
+    "max_platelets": 1.89,
+    "min_platelets": 1.89,
+    "mean_platelets": 1.89,
+    "total_urine_72h": 3.38
+  }
+}
