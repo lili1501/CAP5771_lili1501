@@ -1,16 +1,28 @@
 # Core data handling
 pandas
 numpy
+scipy
 
 # Visualization
 matplotlib
 seaborn
+plotly
 
 # Progress bar
 tqdm
 
 # Notebook environment
 jupyter
+ipywidgets
+voila
+
+# Machine learning
+scikit-learn
+imbalanced-learn
+xgboost
+
+# Model persistence
+joblib
 
 # Database
 # SQLite is used (sqlite3 is included in Python standard library)
