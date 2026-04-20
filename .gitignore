@@ -6,3 +6,4 @@
 *.csv
 
 icu_mortality_model.pkl
+/.db
