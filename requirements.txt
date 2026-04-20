@@ -1,28 +1,31 @@
 # Core data handling
-pandas
-numpy
-scipy
+pandas==2.3.3
+numpy==2.2.6
+scipy==1.15.3
 
 # Visualization
-matplotlib
-seaborn
-plotly
+matplotlib==3.10.8
+seaborn==0.13.2
+plotly==6.6.0
 
 # Progress bar
-tqdm
+tqdm==4.67.1
 
 # Notebook environment
 jupyter
-ipywidgets
-voila
+ipywidgets==8.1.8
+voila==0.5.11
 
 # Machine learning
-scikit-learn
-imbalanced-learn
-xgboost
+scikit-learn==1.7.2
+imbalanced-learn==0.14.1
+xgboost==3.1.2
 
 # Model persistence
-joblib
+joblib==1.5.2
+
+# Model download utility
+gdown
 
 # Database
-# SQLite is used (sqlite3 is included in Python standard library)
+# SQLite is included in Python standard library
