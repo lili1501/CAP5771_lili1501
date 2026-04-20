@@ -5,3 +5,4 @@
 /mimic.db
 *.csv
 
+icu_mortality_model.pkl
